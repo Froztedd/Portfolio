@@ -33,35 +33,35 @@ const projects = [
   {
     title: "Advanced Go AI Agent",
     description: "AI agent for playing the game of Go using advanced algorithms",
-    image: "/assets/go-ai.webm",
+    image: "/assets/Go_board.jpg",
     href: "https://github.com/Froztedd/Advanced-Go-AI-Agent",
     detailsLink: "/projects/go-ai"
   },
   {
     title: "Image Denoising",
     description: "Encoder-Decoder architecture for image denoising",
-    image: "/assets/image-denoising.webm",
+    image: "/assets/image denoising.jpg",
     href: "https://github.com/Froztedd/Image-Denoising-Encoder-Decoder",
     detailsLink: "/projects/image-denoising"
   },
   {
     title: "Web Development Projects",
     description: "Collection of full-stack web development projects",
-    image: "/assets/web-dev.webm",
+    image: "/assets/Web dev.jpg",
     href: "https://github.com/Froztedd/Web-Dev-Projects",
     detailsLink: "/projects/web-dev"
   },
   {
     title: "Heart Disease Prediction",
     description: "ML model for predicting heart disease using various algorithms",
-    image: "/assets/heart-disease.webm",
+    image: "/assets/Heart.jpg",
     href: "https://github.com/Froztedd/Heart-Disease-Prediction",
     detailsLink: "/projects/heart-disease"
   },
   {
     title: "Skin Cancer Classification",
     description: "Deep learning model using ResNet, DenseNet and CNN for skin cancer classification",
-    image: "/assets/skin-cancer.webm",
+    image: "/assets/skin.jpg",
     href: "https://github.com/Froztedd/Skin-Cancer-Classification",
     detailsLink: "/projects/skin-cancer"
   },
