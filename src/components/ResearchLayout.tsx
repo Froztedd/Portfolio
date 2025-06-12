@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { GithubIcon } from "lucide-react";
 import Layout from "@/components/Layout";
+import Image from "next/image";
 
 const MotionLink = motion(Link);
 
@@ -81,9 +82,11 @@ const ResearchLayout: React.FC<ResearchLayoutProps> = ({
             >
               <div className="sticky top-24">
                 {img ? (
-                  <img
+                  <Image
                     src={img}
                     alt={title}
+                    width={800}
+                    height={600}
                     className="w-full rounded-lg shadow-lg mb-6"
                   />
                 ) : (

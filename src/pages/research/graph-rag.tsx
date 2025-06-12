@@ -1,15 +1,14 @@
 import React from "react";
 import ResearchLayout from "@/components/ResearchLayout";
-import { motion } from "framer-motion";
 
-const GraphRAG = () => {
+export default function GraphRAG() {
   return (
     <ResearchLayout
-      title="Plan in Reality: Using Graph RAG to Ground LLM World Models"
-      type="Research Paper"
-      summary="A novel framework combining graph-based Retrieval-Augmented Generation with Model Predictive Control to improve web agent navigation by grounding simulations in structured knowledge graphs."
-      img="/images/research/graph-rag.png"
-      link="https://arxiv.org/abs/2403.01012"
+      title="Agent Decision-Making through Multimodal LLM-RAG Simulation"
+      type="Research Project"
+      summary="A novel multimodal RAG system for visualization retrieval and medical image analysis."
+      img="/assets/graph-rag.png"
+      github="https://github.com/Froztedd/graph-rag"
     >
       <div className="flex flex-col gap-4">
         <h2 className="text-2xl font-bold">Abstract</h2>
@@ -84,6 +83,4 @@ const GraphRAG = () => {
       </div>
     </ResearchLayout>
   );
-};
-
-export default GraphRAG; 
+} 

@@ -21,6 +21,8 @@ import Image from "next/image";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import VanillaTilt from "vanilla-tilt";
 import { motion } from "framer-motion";
+import LocomotiveScroll from 'locomotive-scroll';
+
 const aboutStats = [
   { label: "Years of experience", value: "3+" },
   { label: "AI/ML Projects", value: "10+" },
@@ -168,22 +170,24 @@ const extracurriculars = [
 ];
 
 export default function Home() {
-  const refScrollContainer = useRef(null);
+  const refScrollContainer = useRef<HTMLDivElement>(null);
   const [isScrolled, setIsScrolled] = useState<boolean>(false);
   const [mounted, setMounted] = useState(false);
 
   // Initialize locomotive scroll
   useEffect(() => {
-    let locomotiveScroll: any;
+    let locomotiveScroll: LocomotiveScroll | null = null;
 
     async function initLocomotive() {
       try {
         const Locomotive = (await import("locomotive-scroll")).default;
-        locomotiveScroll = new Locomotive({
-          el: refScrollContainer.current ?? undefined,
-          smooth: true,
-          lerp: 0.08,
-        });
+        if (refScrollContainer.current) {
+          locomotiveScroll = new Locomotive({
+            el: refScrollContainer.current,
+            smooth: true,
+            lerp: 0.08,
+          });
+        }
       } catch (error) {
         console.error("Failed to initialize Locomotive Scroll:", error);
       }

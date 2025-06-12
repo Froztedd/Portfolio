@@ -1,15 +1,15 @@
 import React from "react";
 import ResearchLayout from "@/components/ResearchLayout";
-import { motion } from "framer-motion";
 
-const CareerGuidance = () => {
+export default function CareerGuidance() {
   return (
     <ResearchLayout
-      title="A Novel Approach to Career Guidance System using Machine Learning and Blockchain"
+      title="Career Guidance System using Machine Learning and Blockchain"
       type="Research Paper"
-      summary="An innovative career guidance system that combines machine learning for personalized recommendations with blockchain technology for secure educational record management."
-      img="/images/research/career-guidance.png"
-      github="https://github.com/yourusername/career-guidance-system"
+      summary="A novel approach to career guidance using machine learning algorithms and blockchain technology for secure data handling."
+      img="/assets/career-guidance.png"
+      link="https://ieeexplore.ieee.org/document/example"
+      github="https://github.com/Froztedd/career-guidance-ml"
     >
       <div className="flex flex-col gap-4">
         <h2 className="text-2xl font-bold">Overview</h2>
@@ -103,6 +103,4 @@ const CareerGuidance = () => {
       </div>
     </ResearchLayout>
   );
-};
-
-export default CareerGuidance; 
+} 
