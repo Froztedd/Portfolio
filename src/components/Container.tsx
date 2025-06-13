@@ -192,13 +192,13 @@ export default function Container(props: ContainerProps) {
 
               {/* Desktop menu */}
               <nav className="w-full flex justify-center items-center mt-8">
-                <ul className="flex rounded-full border border-white/10 bg-black/40 px-12 py-6 space-x-12 shadow-md">
+                <ul className="flex rounded-full border border-white/20 shadow-xl px-6 py-2 space-x-8 bg-white/5 backdrop-blur-[10px] backdrop-saturate-150">
                   {navLinks.map((link, i) => (
                     <li key={link.href}>
                       <a
                         href={link.href}
                         onClick={handleClick}
-                        className="text-white text-base font-medium capitalize transition-colors duration-200 hover:text-primary"
+                        className="text-white text-sm font-medium capitalize transition-colors duration-200 hover:text-primary"
                       >
                         {link.text}
                       </a>
