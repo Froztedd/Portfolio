@@ -42,7 +42,6 @@ const navLinks = [
   { href: "#home", text: "Home" },
   { href: "#education", text: "Education" },
   { href: "#experience", text: "Experience" },
-  { href: "#skills", text: "Skills" },
   { href: "#projects", text: "Projects" },
   { href: "#research", text: "Research" },
   { href: "#extracurriculars", text: "Extracurriculars" },
@@ -192,17 +191,21 @@ export default function Container(props: ContainerProps) {
               </Link>
 
               {/* Desktop menu */}
-              <ul className={styles["desktop-nav"]}>
-                {navLinks.map((link, i) => (
-                  <NavItem
-                    key={link.href}
-                    href={link.href}
-                    text={link.text}
-                    i={i}
-                    className="text-base"
-                  />
-                ))}
-              </ul>
+              <nav className="w-full flex justify-center items-center mt-8">
+                <ul className="flex rounded-full border border-white/10 bg-black/40 px-12 py-6 space-x-12 shadow-md">
+                  {navLinks.map((link, i) => (
+                    <li key={link.href}>
+                      <a
+                        href={link.href}
+                        onClick={handleClick}
+                        className="text-white text-base font-medium capitalize transition-colors duration-200 hover:text-primary"
+                      >
+                        {link.text}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </nav>
 
               {/* Mobile menu */}
               <AnimatePresence>
