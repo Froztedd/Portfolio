@@ -270,16 +270,6 @@ export default function Home() {
           className="mt-40 flex w-full flex-col items-center xl:mt-0 xl:min-h-screen xl:flex-row xl:justify-between"
         >
           <div className={styles.intro}>
-            <div
-              data-scroll
-              data-scroll-direction="horizontal"
-              data-scroll-speed=".09"
-              className="flex flex-row items-center space-x-1.5"
-            >
-              <span className={styles.pill}>next.js</span>
-              <span className={styles.pill}>tailwindcss</span>
-              <span className={styles.pill}>typescript</span>
-            </div>
             <div>
               <h1
                 data-scroll
@@ -351,16 +341,16 @@ export default function Home() {
             data-scroll
             data-scroll-speed=".4"
             data-scroll-position="top"
-            className="my-14 flex max-w-6xl flex-col justify-start space-y-10"
+            className="my-14 flex max-w-6xl flex-col justify-center items-center space-y-10 mx-auto"
           >
-            <h2 className="py-16 pb-2 text-3xl font-light leading-normal tracking-tighter text-foreground xl:text-[40px] text-center">
+            <h2 className="py-16 pb-2 text-3xl font-light leading-normal tracking-tighter text-foreground xl:text-[40px] text-center text-justify mx-auto">
               My expertise spans into PyTorch, TensorFlow, app development, LLMs, AI Agents, and MERN stack. I specialize in developing cutting-edge solutions in neural networks, computer vision, and natural language processing. My work encompasses both research-driven innovations and practical implementations, from fine-tuning large language models to building autonomous AI agents and robust full-stack applications.
             </h2>
-            <div className="grid grid-cols-2 gap-8 xl:grid-cols-3">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full justify-items-center text-center">
               {aboutStats.map((stat) => (
                 <div
                   key={stat.label}
-                  className="flex flex-col items-center text-center xl:items-start xl:text-start"
+                  className="flex flex-col items-center text-center"
                 >
                   <span className="clash-grotesk text-gradient text-4xl font-semibold tracking-tight xl:text-6xl">
                     {stat.value}
@@ -379,7 +369,7 @@ export default function Home() {
           <div
             data-scroll
             data-scroll-speed=".4"
-            className="my-64"
+            className="my-24"
           >
             <span className="text-gradient clash-grotesk text-sm font-semibold tracking-tighter">
               🎓 Education
@@ -450,7 +440,7 @@ export default function Home() {
 
         {/* Projects */}
         <section id="projects" data-scroll-section>
-          <div data-scroll data-scroll-speed=".4" className="my-64">
+          <div data-scroll data-scroll-speed=".4" className="my-32">
             <span className="text-gradient clash-grotesk text-sm font-semibold tracking-tighter">
               ✨ Projects
             </span>
@@ -512,7 +502,7 @@ export default function Home() {
           <div
             data-scroll
             data-scroll-speed=".4"
-            className="my-64"
+            className="my-32"
           >
             <span className="text-gradient clash-grotesk text-sm font-semibold tracking-tighter">
               📚 Research
@@ -554,7 +544,7 @@ export default function Home() {
           <div
             data-scroll
             data-scroll-speed=".4"
-            className="my-64"
+            className="my-32"
           >
             <span className="text-gradient clash-grotesk text-sm font-semibold tracking-tighter">
               ✨ Experience
@@ -597,7 +587,7 @@ export default function Home() {
 
         {/* Extracurriculars */}
         <section id="extracurriculars" data-scroll-section>
-          <div data-scroll data-scroll-speed=".4" className="my-64">
+          <div data-scroll data-scroll-speed=".4" className="my-32">
             <span className="text-gradient clash-grotesk text-sm font-semibold tracking-tighter">
               🎨 Beyond Tech
             </span>
@@ -653,7 +643,7 @@ export default function Home() {
         </section>
 
         {/* Contact */}
-        <section id="contact" data-scroll-section className="my-64">
+        <section id="contact" data-scroll-section className="my-32">
           <div
             data-scroll
             data-scroll-speed=".4"
