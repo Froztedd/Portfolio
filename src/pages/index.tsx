@@ -508,11 +508,18 @@ export default function Home() {
               {/* Graph RAG Paper */}
               <Link href="/research/graph-rag" target="_blank" className="group">
                 <div className="relative overflow-hidden rounded-xl bg-gradient-to-br from-background to-background/50 border border-white/10 transition-colors hover:border-primary/50">
-                  <div className="aspect-video w-full bg-primary/20"></div>
+                  <div className="aspect-video w-full bg-primary/20 flex items-center justify-center">
+                    <Image
+                      src="/images/LLM RAG.png"
+                      alt="LLM RAG Cover"
+                      width={600}
+                      height={338}
+                      className="object-contain h-full w-full"
+                    />
+                  </div>
                   <div className="p-6">
                     <h3 className="text-xl font-semibold mb-2">Agent Decision-Making through Multimodal LLM-RAG Simulation</h3>
                     <p className="text-muted-foreground mb-4">Developing a novel multimodal RAG system for visualization retrieval and medical image analysis, with an experimental simulation framework reducing errors by 45%</p>
-                    <p className="text-sm text-muted-foreground">Jan 2024 - Present</p>
                   </div>
                 </div>
               </Link>
