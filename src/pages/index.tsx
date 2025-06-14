@@ -121,14 +121,7 @@ const experiences = [
     period: "Nov 2022 - Jan 2023",
     location: "Chennai, TN, India",
     description: "Developed high-performance surveillance monitoring system in C++ using OpenCV, reducing incident response times by 45%. Implemented secure image processing pipeline handling 1000+ daily video transactions.",
-  },
-  {
-    title: "Graduate Student",
-    company: "University of Southern California",
-    period: "2023 - Present",
-    location: "Los Angeles, CA",
-    description: "M.S. in Computer Science with specialization in Artificial Intelligence. Research focus on deep learning and computer vision.",
-  },
+  }
 ];
 
 const research = [
