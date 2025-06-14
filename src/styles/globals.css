@@ -108,3 +108,18 @@
     animation: blink 1s infinite;
   }
 }
+
+.rolling-gallery-grid {
+  position: relative;
+}
+.rolling-image {
+  animation: roll-vertical 8s linear infinite;
+}
+@keyframes roll-vertical {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
