@@ -25,13 +25,15 @@ export default function Footer() {
           </span>
         </span>
         <Link
-          href="mailto:charankumar02@gmail.com"
+          href="https://mail.google.com/mail/?view=cm&to=d.charankumarnaidu@gmail.com"
           passHref
+          target="_blank"
+          rel="noopener noreferrer"
           className="text-xs text-muted-foreground hover:text-foreground"
         >
           <Button variant={"outline"}>
             <MailIcon className="h-4 w-4 md:mr-2" />
-            <span className="hidden md:flex">charankumar02@gmail.com</span>
+            <span className="hidden md:flex">d.charankumarnaidu@gmail.com</span>
           </Button>
         </Link>
       </div>

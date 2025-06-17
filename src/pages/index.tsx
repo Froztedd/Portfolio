@@ -651,16 +651,16 @@ export default function Home() {
             className="flex flex-col items-center justify-center rounded-lg bg-gradient-to-br from-primary/[6.5%] to-white/5 px-8 py-16 text-center xl:py-24"
           >
             <h2 className="text-4xl font-medium tracking-tighter xl:text-6xl">
-              Let&apos;s work{" "}
-              <span className="text-gradient clash-grotesk">together.</span>
+              Let&apos;s work <span className="text-gradient clash-grotesk">together.</span>
             </h2>
             <p className="mt-1.5 text-base tracking-tight text-muted-foreground xl:text-lg">
-              I&apos;m currently available for freelance work and open to
-              discussing new projects.
+              I&apos;m open for internships, co-ops, and freelance work as well.
             </p>
-            <Link href="mailto:d.charankumarnaidu@gmail.com" passHref>
-              <Button className="mt-6">Get in touch</Button>
-            </Link>
+            <div className="mt-8 space-y-2 text-lg text-foreground">
+              <div><strong>Phone:</strong> +1 (213)-994-8791</div>
+              <div><strong>Email:</strong> <a href="mailto:d.charankumarnaidu@gmail.com" className="underline text-primary">d.charankumarnaidu@gmail.com</a></div>
+              <div><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/charankumar02/" target="_blank" rel="noopener noreferrer" className="underline text-primary">linkedin.com/in/charankumar02</a></div>
+            </div>
           </div>
         </section>
       </div>
