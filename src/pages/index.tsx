@@ -621,23 +621,59 @@ export default function Home() {
               ))}
             </div>
 
-            {/* Photography Grid */}
-            <div className="mt-14 grid grid-cols-2 md:grid-cols-3 gap-4">
-              {[1, 2, 3, 4, 5, 6].map((i) => (
-                <div
-                  key={i}
-                  className="relative aspect-square overflow-hidden rounded-lg"
-                  data-scroll
-                  data-scroll-speed={0.05 * i}
-                >
-                  <Image
-                    src={`/assets/photo-${i}.jpg`}
-                    alt={`Photography sample ${i}`}
-                    fill
-                    className="object-cover hover:scale-110 transition-transform duration-500"
-                  />
+            {/* Creative Auto-Scroll Gallery */}
+            <div className="mt-14 relative rounded-2xl bg-gradient-to-br from-background to-primary/10 p-8 shadow-2xl border border-white/10 max-w-4xl mx-auto">
+              <h3 className="text-2xl font-semibold mb-6 text-center text-gradient">Creative Gallery</h3>
+              {/* Fade effect overlays */}
+              <div className="pointer-events-none absolute top-0 left-0 h-full w-24 z-10" style={{background: 'linear-gradient(to right, var(--background), transparent)'}} />
+              <div className="pointer-events-none absolute top-0 right-0 h-full w-24 z-10" style={{background: 'linear-gradient(to left, var(--background), transparent)'}} />
+              <div className="space-y-6">
+                {/* Row 1: Left to Right */}
+                <div className="overflow-hidden w-full h-52 relative">
+                  <div className="flex gap-8 animate-scroll-row-1">
+                    {["DSC_0009.jpg","DSC_0030.jpg","DSC_0036.jpg","DSC_0045.jpg","DSC_0050.jpg","DSC_0073.jpg"].map((img, i) => (
+                      <div key={img+"-r1"} className="min-w-[260px] h-44 rounded-xl overflow-hidden bg-white/10 flex items-center justify-center">
+                        <Image src={`/images/${img}`} alt={`Creative ${i+1}`} width={260} height={176} className="object-cover w-full h-full" />
+                      </div>
+                    ))}
+                    {["DSC_0009.jpg","DSC_0030.jpg","DSC_0036.jpg","DSC_0045.jpg","DSC_0050.jpg","DSC_0073.jpg"].map((img, i) => (
+                      <div key={img+"-r1b"} className="min-w-[260px] h-44 rounded-xl overflow-hidden bg-white/10 flex items-center justify-center">
+                        <Image src={`/images/${img}`} alt={`Creative ${i+1}`} width={260} height={176} className="object-cover w-full h-full" />
+                      </div>
+                    ))}
+                  </div>
                 </div>
-              ))}
+                {/* Row 2: Right to Left */}
+                <div className="overflow-hidden w-full h-52 relative">
+                  <div className="flex gap-8 animate-scroll-row-2">
+                    {["DSC_0074.jpg","DSC_0100.jpg","DSC_0132.jpg","DSC_0135.jpg","DSC_0137.jpg","DSC_0138.jpg"].map((img, i) => (
+                      <div key={img+"-r2"} className="min-w-[260px] h-44 rounded-xl overflow-hidden bg-white/10 flex items-center justify-center">
+                        <Image src={`/images/${img}`} alt={`Creative ${i+7}`} width={260} height={176} className="object-cover w-full h-full" />
+                      </div>
+                    ))}
+                    {["DSC_0074.jpg","DSC_0100.jpg","DSC_0132.jpg","DSC_0135.jpg","DSC_0137.jpg","DSC_0138.jpg"].map((img, i) => (
+                      <div key={img+"-r2b"} className="min-w-[260px] h-44 rounded-xl overflow-hidden bg-white/10 flex items-center justify-center">
+                        <Image src={`/images/${img}`} alt={`Creative ${i+7}`} width={260} height={176} className="object-cover w-full h-full" />
+                      </div>
+                    ))}
+                  </div>
+                </div>
+                {/* Row 3: Left to Right */}
+                <div className="overflow-hidden w-full h-52 relative">
+                  <div className="flex gap-8 animate-scroll-row-1">
+                    {["DSC_0415.jpg","DSC_0446.jpg","DSC_0504.jpg","DSC_0505.jpg","DSC_0533.jpg","DSC_0691.jpg"].map((img, i) => (
+                      <div key={img+"-r3"} className="min-w-[260px] h-44 rounded-xl overflow-hidden bg-white/10 flex items-center justify-center">
+                        <Image src={`/images/${img}`} alt={`Creative ${i+13}`} width={260} height={176} className="object-cover w-full h-full" />
+                      </div>
+                    ))}
+                    {["DSC_0415.jpg","DSC_0446.jpg","DSC_0504.jpg","DSC_0505.jpg","DSC_0533.jpg","DSC_0691.jpg"].map((img, i) => (
+                      <div key={img+"-r3b"} className="min-w-[260px] h-44 rounded-xl overflow-hidden bg-white/10 flex items-center justify-center">
+                        <Image src={`/images/${img}`} alt={`Creative ${i+13}`} width={260} height={176} className="object-cover w-full h-full" />
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </section>
